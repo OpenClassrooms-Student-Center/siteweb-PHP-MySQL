@@ -10,7 +10,6 @@ $getData = $_GET;
 if (
     !isset($getData['email'])
     || !filter_var($getData['email'], FILTER_VALIDATE_EMAIL)
-    || !isset($getData['message'])
     || empty($getData['message'])
     || trim($getData['message']) === ''
 ) {

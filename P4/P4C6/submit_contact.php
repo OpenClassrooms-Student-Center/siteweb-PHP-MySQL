@@ -10,7 +10,6 @@ $postData = $_POST;
 if (
     !isset($postData['email'])
     || !filter_var($postData['email'], FILTER_VALIDATE_EMAIL)
-    || !isset($postData['message'])
     || empty($postData['message'])
     || trim($postData['message']) === ''
 ) {

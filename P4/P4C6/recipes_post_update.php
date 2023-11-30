@@ -14,8 +14,8 @@ $postData = $_POST;
 if (
     !isset($postData['id'])
     || !is_numeric($postData['id'])
-    || !isset($postData['title'])
-    || !isset($postData['recipe'])
+    || empty($postData['title'])
+    || empty($postData['recipe'])
     || trim(strip_tags($postData['title'])) === ''
     || trim(strip_tags($postData['recipe'])) === ''
 ) {

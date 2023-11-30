@@ -13,8 +13,8 @@ $postData = $_POST;
 
 // Vérification du formulaire soumis
 if (
-    !isset($postData['title'])
-    || !isset($postData['recipe'])
+    empty($postData['title'])
+    || empty($postData['recipe'])
     || trim(strip_tags($postData['title'])) === ''
     || trim(strip_tags($postData['recipe'])) === ''
 ) {
