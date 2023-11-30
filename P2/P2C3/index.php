@@ -30,7 +30,7 @@ $recipes = [
 </head>
 <body>
     <ul>
-        <?php for ($lines = 0; $lines <= 1; $lines++) : ?>
+        <?php for ($lines = 0; $lines <= 3; $lines++) : ?>
             <li><?php echo $recipes[$lines]['title'] . ' (' . $recipes[$lines]['author'] . ')'; ?></li>
         <?php endfor; ?>
     </ul>
